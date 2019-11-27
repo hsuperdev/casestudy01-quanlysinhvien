@@ -20,7 +20,7 @@ let Students = function() {
       this.data.splice(index, 1);
    };
    this.save = function() {
-      const jsonData = JSON.stringify('https://eloquent-turing-127af9.netlify.com/');
+      const jsonData = JSON.stringify(this.data);
       localStorage.setItem(this.storeKey, jsonData);
    };
    this.load = function() {
@@ -35,8 +35,8 @@ let Students = function() {
 
 let theStudent = new Students();
 console.log('theStudent==>', theStudent);
-// theStudent.load();
-// renderStudents();
+theStudent.load();
+renderStudents();
 
 //document ready
 document.addEventListener('DOMContentLoaded', function() {
