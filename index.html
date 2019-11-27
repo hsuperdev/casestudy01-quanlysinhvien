@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Phần Mền Quản Lý Sinh Viên</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="fonts/css/all.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Rubik&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+<div id='wrapper'>
+      <div class='header'>
+        <ul>
+          <li>
+            <a href="https://codegym.vn/codegym-career/">
+              <img src="images/logo-top.png" alt="photo">
+            </a>
+          </li>
+
+          <li>
+            <a href="#">Trang chủ</a>
+          </li>
+
+          <li>
+             <div class="sub-menu">
+                <!-- <img src="images/sinhvienpm.jpg" alt=""> -->
+             </div>
+            <a href="#">Giới thiệu</a>
+          </li>
+
+          <li>
+            <a href="#">Phần mềm</a>
+          </li>
+
+          <li>
+            <a href="#">Ảnh học viên</a>
+          </li>
+
+          <li>
+            <a href="#">Blog</a>
+          </li>
+
+          <li>
+            <a href="#">Liên hệ</a>
+          </li>
+
+          <li>
+            <a href="#">Tương tác</a>
+          </li>
+
+          <li>
+            <a href="#">Đăng kí</a>
+          </li>
+
+          <li>
+            <a href="login.html">Đăng Nhập</a>
+          </li>
+        </ul>
+      </div>
+      <div class='clear'></div>
+
+
+      <div id="container">
+        <div class='left-contain'>
+          <ul class="left-main-01 main">
+            <li>
+              <i class="fas fa-search"></i>
+              <span>Trang chủ</span>
+            </li>
+            <li>
+              <i class="fas fa-align-justify"></i>
+              <span>Thịnh hành</span>
+            </li>
+            <li>
+              <i class="far fa-file-alt"></i>
+              <span>Kênh đăng kí</span>
+            </li>
+          </ul>
+          <hr>
+
+          <ul class="left-main-02 main">
+            <li>
+              <h5>DỊCH VỤ KHÁC TỪ PM</h5>
+            </li>
+            <li>
+              <i class="fab fa-adobe"></i>
+              <span>Thư viện</span>
+            </li>
+            <li>
+              <i class="fas fa-camera"></i>
+              <span>Lịch sử</span>
+            </li>
+            <li>
+              <i class="fab fa-adn"></i>
+              <span>Xem sau</span>
+            </li><li>
+              <i class="fas fa-address-card"></i>
+              <span>Xem trước</span>
+            </li><li>
+              <i class="fas fa-power-off"></i>
+              <span>Video đã thích</span>
+            </li>
+          </ul>
+          <hr>
+
+          <ul class="left-main-02 main">
+            <li>
+              <h5>DỊCH VỤ KHÁC TỪ PM</h5>
+            </li>
+            <li>
+              <i class="fab fa-adobe"></i>
+              <span>Trang chủ 1</span>
+            </li>
+            <li>
+              <i class="fab fa-bandcamp"></i>
+              <span>Trang chủ 2</span>
+            </li>
+            <li>
+              <i class="fab fa-app-store-ios"></i>
+              <span>Trang chủ 3</span>
+            </li><li>
+              <i class="fas fa-align-left"></i>
+              <span>Trang chủ 4</span>
+            </li>
+            <li>
+              <i class="fab fa-amazon"></i>
+              <span>Trang chủ 5</span>
+            </li>
+            <li>
+              <i class="fab fa-canadian-maple-leaf"></i>
+              <span>Trang chủ 6</span>
+            </li>
+            <li>
+              <i class="fab fa-facebook"></i>
+              <span>Trang chủ 7</span>
+            </li>
+          </ul>
+
+        </div>
+
+        <div class='right-contain'>
+            <div class='right-contain-banner'>
+
+            </div>
+
+            <!-- BANG CHU DU LIEU -->
+            <!-- KET THUC BANG CHUA DU LIEU -->
+            <div class="container">
+              <!-- Hiển thị sinh viên bên trái của ứng dụng -->
+              <div class="content left">
+                <ul id="students-list">
+
+                </ul>
+              </div>
+              <!--Kết thúc form hiển thị bên trái của úng dụng -->
+
+              <!-- Hiển thị form nhập liệu bên phải của ứng dụng -->
+              <div class="content student-form">
+                <div class="form-group">
+                  <label class="lable">Name</label>
+                  <input class="input name" type="text" placeholder="Enter your name">
+                </div>
+
+                <div class="form-group">
+                  <label class="lable">Age</label>
+                  <input class="input age" id='age' type="text" placeholder="Enter your age">
+                </div>
+
+                <div class="form-group">
+                  <label class="lable">Phone</label>
+                  <input class="input phone" type="text" placeholder="Enter your phone">
+                </div>
+
+                <div class="form-group">
+                  <label class="lable">Address</label>
+                  <input class="input address" type="text" placeholder="Enter your address">
+                </div>
+
+                <div class="form-group">
+                  <label class="lable">Email</label>
+                  <input class="input email" type="text" placeholder="Enter your email">
+                </div>
+
+                <div class="form-group">
+                 <label class="lable">Picture</label>
+                 <input class="input picture" type="text" placeholder="Enter your picture">
+              </div>
+
+                <div class="form-group">
+                  <button class="createStudent" type="button" name="button" onclick="onClickCreatStudent();">Create</button>
+                </div>
+              </div>
+            </div>
+            <!-- Hien thi danh sach sinh vien -->
+        </div>
+      </div>
+    </div>
+   </div>
+
+    <img id='myBtn' src="images/go-to-top.png" width="50px" onclick="clickTop();">
+    </div>
+
+    <script src='./js/students.js'></script>
+    <script src='./js/login.js'></script>
+    <!-- <script src='js/blog.js'></script> -->
+    <!-- <script src='./js/validation.js'></script> -->
+  </body>
+</html>
