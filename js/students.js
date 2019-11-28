@@ -5,7 +5,24 @@ let studentIDTemp;
 let Students = function() {
    this.storeKey = 'SAVE_STORAGE';
    this.resetForm = '';
-   this.data = [];
+   this.data = [
+      {
+         name: 'Hoàn Nguyễn',
+         age: 25,
+         phone: '1111.222.333',
+         address: 'Bắc Giang',
+         email: 'hoantn.super@gmail',
+         picture: 'https://zicxa.com/hinh-anh/wp-content/uploads/2019/06/T%E1%BB%95ng-h%E1%BB%A3p-nh%E1%BB%AFng-h%C3%ACnh-%E1%BA%A3nh-%C4%91%E1%BA%B9p-v%E1%BB%81-bi%E1%BB%83n-4.jpg'
+      },
+      {
+         name: 'Hoàn Nguyễn',
+         age: 25,
+         phone: '1111.222.333',
+         address: 'Bắc Giang',
+         email: 'hoantn.super@gmail',
+         picture: 'https://zicxa.com/hinh-anh/wp-content/uploads/2019/06/T%E1%BB%95ng-h%E1%BB%A3p-nh%E1%BB%AFng-h%C3%ACnh-%E1%BA%A3nh-%C4%91%E1%BA%B9p-v%E1%BB%81-bi%E1%BB%83n-4.jpg'
+      }
+   ];
    // this.enableEditMode = true;
    // this.disableEditMode = false;
    this.add = function(student) {
