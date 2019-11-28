@@ -6,7 +6,16 @@ let studentIDTemp;
 let Students = function() {
    this.storeKey = 'SAVE_STORAGE';
    this.resetForm = '';
-   this.data = [];
+   this.data = [
+       {
+          name: 'Hoàn Nguyễn',
+          age: 24,
+          phone: '123456789',
+          address: 'Hà Nội',
+          email: 'hoantn',
+          picture: 'https://maisonoffice.vn/wp-content/uploads/2019/03/Toa-nha-14-lang-ha-MaisonOffice-1.jpg'
+       }
+   ];
    // this.enableEditMode = true;
    // this.disableEditMode = false;
 
