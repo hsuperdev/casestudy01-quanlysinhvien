@@ -12,7 +12,7 @@ let Students = function() {
          phone: '1111.222.333',
          address: 'Bắc Giang',
          email: 'hoantn.super@gmail',
-         picture: 'https://zicxa.com/hinh-anh/wp-content/uploads/2019/06/T%E1%BB%95ng-h%E1%BB%A3p-nh%E1%BB%AFng-h%C3%ACnh-%E1%BA%A3nh-%C4%91%E1%BA%B9p-v%E1%BB%81-bi%E1%BB%83n-4.jpg'
+         picture: 'https://img2.thuthuatphanmem.vn/uploads/2018/11/30/anh-dai-dien-cute-cho-zalo_104205429.jpg'
       },
       {
          name: 'Hoàn Nguyễn',
@@ -20,11 +20,26 @@ let Students = function() {
          phone: '1111.222.333',
          address: 'Bắc Giang',
          email: 'hoantn.super@gmail',
-         picture: 'https://zicxa.com/hinh-anh/wp-content/uploads/2019/06/T%E1%BB%95ng-h%E1%BB%A3p-nh%E1%BB%AFng-h%C3%ACnh-%E1%BA%A3nh-%C4%91%E1%BA%B9p-v%E1%BB%81-bi%E1%BB%83n-4.jpg'
+         picture: 'http://thuthuat123.com/uploads/2018/01/27/anh-dai-dien-dep-nhat-56_095736.jpg'
+      },
+      {
+         name: 'Hoàn Nguyễn',
+         age: 25,
+         phone: '1111.222.333',
+         address: 'Bắc Giang',
+         email: 'hoantn.super@gmail',
+         picture: 'https://i.pinimg.com/564x/e2/4e/ff/e24effa123797fd2099fbcf3060585bf.jpg'
+      },
+      {
+         name: 'Hoàn Nguyễn',
+         age: 25,
+         phone: '1111.222.333',
+         address: 'Bắc Giang',
+         email: 'hoantn.super@gmail',
+         picture: 'https://exp.gg/vn/wp-content/uploads/2018/12/Yasuo-chibi.jpg'
       }
    ];
-   // this.enableEditMode = true;
-   // this.disableEditMode = false;
+   
    this.add = function(student) {
       this.data.push(student);
    };
