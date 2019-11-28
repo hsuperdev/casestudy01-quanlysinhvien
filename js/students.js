@@ -34,14 +34,13 @@ let Students = function() {
 }
 
 let theStudent = new Students();
+// theStudent.save();
 console.log('theStudent==>', theStudent);
-theStudent.load();
-renderStudents();
 
 //document ready
 document.addEventListener('DOMContentLoaded', function() {
-  // theStudent.save();
   theStudent.load();
+  theStudent.save();
   renderStudents();
 });
 
@@ -132,7 +131,8 @@ function setInputValue(selector, value) {
 
 //4.hàm hiển thị danh sách sinh viên..
 function renderStudents() {
-  let students = theStudent.data;
+  let students = theStudent.list();
+  console.log();
   let html = '';
   for (let i = 0; i < students.length; i++) {
     let student = students[i];
