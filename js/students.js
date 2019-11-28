@@ -1,24 +1,13 @@
 let editMode = false;
 let studentIDTemp;
 
-
 //1. Khởi tạo một class với tên là Students
 let Students = function() {
    this.storeKey = 'SAVE_STORAGE';
    this.resetForm = '';
-   this.data = [
-       {
-          name: 'Hoàn Nguyễn',
-          age: 24,
-          phone: '123456789',
-          address: 'Hà Nội',
-          email: 'hoantn',
-          picture: 'https://maisonoffice.vn/wp-content/uploads/2019/03/Toa-nha-14-lang-ha-MaisonOffice-1.jpg'
-       }
-   ];
+   this.data = [];
    // this.enableEditMode = true;
    // this.disableEditMode = false;
-
    this.add = function(student) {
       this.data.push(student);
    };
@@ -34,7 +23,9 @@ let Students = function() {
    };
    this.load = function() {
       const originData = localStorage.getItem(this.storeKey);
-      this.data = JSON.parse(originData);
+      if (JSON.parse(originData)) {
+         this.data = JSON.parse(originData);
+      }
    };
    this.list = function() {
       return this.data;
@@ -42,14 +33,13 @@ let Students = function() {
    };
 }
 
+
 let theStudent = new Students();
-// theStudent.save();
 console.log('theStudent==>', theStudent);
 
 //document ready
 document.addEventListener('DOMContentLoaded', function() {
   theStudent.load();
-  theStudent.save();
   renderStudents();
 });
 
@@ -141,7 +131,6 @@ function setInputValue(selector, value) {
 //4.hàm hiển thị danh sách sinh viên..
 function renderStudents() {
   let students = theStudent.list();
-  console.log();
   let html = '';
   for (let i = 0; i < students.length; i++) {
     let student = students[i];
