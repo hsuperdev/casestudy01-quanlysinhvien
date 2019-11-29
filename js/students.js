@@ -36,7 +36,7 @@ let Students = function() {
          phone: '111.222.33',
          address: 'Hà Nội',
          email: 'an.codegym@gmail',
-         picture: 'https://files.slack.com/files-pri/T4AQ8L79A-FR5HA53NJ/d4527a9a26bd4fd6116df2485f2a5d53-original.png'
+         picture: 'https://www.upsieutoc.com/images/2019/11/29/d4527a9a26bd4fd6116df2485f2a5d53-original.png'
       }
    ];
 
