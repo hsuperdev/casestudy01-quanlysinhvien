@@ -71,9 +71,14 @@ li {
    background: #f1f1f1;
    position: absolute;
    top: 50px;
-   left: 0px;
+   left: -94px;
    z-index: 1;
    display: none;
+}
+
+.sub-menu img {
+   width: 806px;
+   height: 270px;
 }
 
 .sub-menu h2{
