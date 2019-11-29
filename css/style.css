@@ -287,6 +287,18 @@ button:hover {
   height: 238px;
 }
 
+.student img:hover {
+   width: 239px;
+   height: 238px;
+   opacity: 0.8;
+   cursor: pointer;
+}
+
+ .student:hover p {
+   color: #444;
+   font-size: 16px;
+}
+
 .student span {
   font-weight: 200;
 }
