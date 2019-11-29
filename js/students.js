@@ -15,12 +15,12 @@ let Students = function() {
          picture: 'https://files.slack.com/files-pri/T4AQ8L79A-FQQH4C2BU/image.png'
       },
       {
-         name: 'Hoàn Nguyễn',
-         age: 25,
+         name: 'Đông Nguyễn',
+         age: 18,
          phone: '1900.1357',
-         address: 'Bắc Giang',
-         email: 'hoantn.codegym@gmail',
-         picture: 'https://andy.codegym.vn/storage/images/avatars/e8ff24a454ddfb4a417ccec2b8e1e51d-original.PNG'
+         address: 'Hà Nội',
+         email: 'dongtn.codegym@gmail',
+         picture: 'https://codegym.vn/wp-content/uploads/2019/08/Ho%CC%A3c-ly%CC%81-thuye%CC%82%CC%81t-2-1.jpg'
       },
       {
          name: 'An Nguyễn',
@@ -31,12 +31,12 @@ let Students = function() {
          picture: 'https://files.slack.com/files-pri/T4AQ8L79A-FR5HA53NJ/d4527a9a26bd4fd6116df2485f2a5d53-original.png'
       },
       {
-         name: 'Hải Nguyễn',
-         age: 22,
+         name: 'Hoàn Nguyễn',
+         age: 25,
          phone: '19001512',
-         address: 'Hà Tĩnh',
-         email: 'haitn.codegym@gmail',
-         picture: 'https://codegym.vn/wp-content/uploads/2019/08/hiring-day-danh-cho-hoc-vien-lop-c0219g1-php-tai-codegym-7.jpeg'
+         address: 'Bắc Giang',
+         email: 'hoantn.codegym@gmail',
+         picture: 'https://www.upsieutoc.com/images/2019/11/29/z1638693811565_d8c7a9053207617a5d427ba199cba132.jpg'
       }
    ];
 
