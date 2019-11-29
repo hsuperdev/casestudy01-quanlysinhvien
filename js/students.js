@@ -7,39 +7,39 @@ let Students = function() {
    this.resetForm = '';
    this.data = [
       {
-         name: 'Hoàn Nguyễn',
-         age: 25,
-         phone: '1111.222.333',
-         address: 'Bắc Giang',
-         email: 'hoantn.super@gmail',
-         picture: 'https://img2.thuthuatphanmem.vn/uploads/2018/11/30/anh-dai-dien-cute-cho-zalo_104205429.jpg'
+         name: 'Bạch Long',
+         age: 18,
+         phone: '1900.1221',
+         address: 'Hà Nội',
+         email: 'longbn.codegym@gmail',
+         picture: 'https://files.slack.com/files-pri/T4AQ8L79A-FQQH4C2BU/image.png'
       },
       {
          name: 'Hoàn Nguyễn',
          age: 25,
-         phone: '1111.222.333',
+         phone: '1900.1357',
          address: 'Bắc Giang',
-         email: 'hoantn.super@gmail',
-         picture: 'http://thuthuat123.com/uploads/2018/01/27/anh-dai-dien-dep-nhat-56_095736.jpg'
+         email: 'hoantn.codegym@gmail',
+         picture: 'https://andy.codegym.vn/storage/images/avatars/e8ff24a454ddfb4a417ccec2b8e1e51d-original.PNG'
       },
       {
-         name: 'Hoàn Nguyễn',
+         name: 'An Nguyễn',
          age: 25,
-         phone: '1111.222.333',
-         address: 'Bắc Giang',
-         email: 'hoantn.super@gmail',
-         picture: 'https://i.pinimg.com/564x/e2/4e/ff/e24effa123797fd2099fbcf3060585bf.jpg'
+         phone: '111.222.33',
+         address: 'Hà Nội',
+         email: 'an.codegym@gmail',
+         picture: 'https://files.slack.com/files-pri/T4AQ8L79A-FR5HA53NJ/d4527a9a26bd4fd6116df2485f2a5d53-original.png'
       },
       {
-         name: 'Hoàn Nguyễn',
-         age: 25,
-         phone: '1111.222.333',
-         address: 'Bắc Giang',
-         email: 'hoantn.super@gmail',
-         picture: 'https://exp.gg/vn/wp-content/uploads/2018/12/Yasuo-chibi.jpg'
+         name: 'Hải Nguyễn',
+         age: 22,
+         phone: '19001512',
+         address: 'Hà Tĩnh',
+         email: 'haitn.codegym@gmail',
+         picture: 'https://codegym.vn/wp-content/uploads/2019/08/hiring-day-danh-cho-hoc-vien-lop-c0219g1-php-tai-codegym-7.jpeg'
       }
    ];
-   
+
    this.add = function(student) {
       this.data.push(student);
    };
@@ -65,7 +65,7 @@ let Students = function() {
    };
 }
 
-
+//create a object...
 let theStudent = new Students();
 console.log('theStudent==>', theStudent);
 
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function editStudentHanddle() {
    alert('Updating...');
-   //lấy ra value sinh viên tại vị trí đã sửa...
+   //get student in index edit...
    let name = getInputValue('.form-group .name');
    let age = getInputValue('.form-group .age');
    let phone = getInputValue('.form-group .phone');
@@ -148,19 +148,19 @@ function onClickCreatStudent() {
    }
 }
 
-//3.hàm lấy giá trị của ô input
+//3.get input value
 function getInputValue(selector) {
    let inputElement = document.querySelector(selector);
    return inputElement.value;
 }
 
-//hàm set giá trị cho ô input
+//set input value
 function setInputValue(selector, value) {
    let inputElement = document.querySelector(selector);
    inputElement.value = value;
 }
 
-//4.hàm hiển thị danh sách sinh viên..
+//4.renderstudents
 function renderStudents() {
   let students = theStudent.list();
   let html = '';
@@ -182,13 +182,13 @@ function renderStudents() {
 
 }
 
-//5.tạo ra hàm setHTML để thay đổi html
+//5.setHTML
 function setHTML(selector, html) {
   let element = document.querySelector(selector);
   element.innerHTML = html;
 }
 
-//6.hàm xóa onDeleteStudent() - dùng cho ứng dụng này: 1 lần...
+//6.onDeleteStudent() once...
 function onDeleteStudent(index) {
   let students = theStudent.data;
   if (confirm("Are you sure to delete this student?")) {
@@ -208,7 +208,7 @@ function resetFormStudent() {
    setInputValue('.form-group .picture', theStudent.resetForm);
 }
 
-//7.hàm sửa sinh viên
+//7.edit student
 function onEditStudent(index) {
    //lưu biến studentIDTemp = index: kĩ thuật truyền tham số id
    studentIDTemp = index;

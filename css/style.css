@@ -65,12 +65,12 @@ li {
 }
 
 .sub-menu {
-   width: 510px;
-   height: 350px;
+   width: 400px;
+   height: 200px;
    background: #f1f1f1;
    position: absolute;
    top: 50px;
-   left: -120px;
+   left: 0px;
    z-index: 1;
    display: none;
 }
