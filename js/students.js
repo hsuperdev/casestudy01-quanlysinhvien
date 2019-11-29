@@ -7,6 +7,14 @@ let Students = function() {
    this.resetForm = '';
    this.data = [
       {
+         name: 'Hoàn Nguyễn',
+         age: 25,
+         phone: '19001512',
+         address: 'Bắc Giang',
+         email: 'hoantn.codegym@gmail',
+         picture: 'https://www.upsieutoc.com/images/2019/11/29/z1638693811565_d8c7a9053207617a5d427ba199cba132.jpg'
+      },
+      {
          name: 'Bạch Long',
          age: 18,
          phone: '1900.1221',
@@ -29,14 +37,6 @@ let Students = function() {
          address: 'Hà Nội',
          email: 'an.codegym@gmail',
          picture: 'https://files.slack.com/files-pri/T4AQ8L79A-FR5HA53NJ/d4527a9a26bd4fd6116df2485f2a5d53-original.png'
-      },
-      {
-         name: 'Hoàn Nguyễn',
-         age: 25,
-         phone: '19001512',
-         address: 'Bắc Giang',
-         email: 'hoantn.codegym@gmail',
-         picture: 'https://www.upsieutoc.com/images/2019/11/29/z1638693811565_d8c7a9053207617a5d427ba199cba132.jpg'
       }
    ];
 
