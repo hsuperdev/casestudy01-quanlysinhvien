@@ -25,6 +25,7 @@ li {
 #wrapper {
   width: 1350px;
   height: auto;
+  margin: 0 auto;
 }
 
 .header {
